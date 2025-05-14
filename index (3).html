@@ -1,0 +1,107 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TB Vending Services LLC</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f5f5f5; }
+    header, nav, footer { background: #333; color: #fff; padding: 1em; }
+    nav a { color: #fff; margin: 0 1em; text-decoration: none; }
+    .container { padding: 2em; background: #fff; margin: 1em auto; max-width: 1000px; }
+    h1, h2 { color: #333; }
+    footer { text-align: center; font-size: 0.9em; }
+    form { display: flex; flex-direction: column; max-width: 600px; }
+    label { margin-top: 1em; }
+    input, textarea { padding: 0.5em; margin-top: 0.5em; border: 1px solid #ccc; border-radius: 4px; }
+    button { margin-top: 1em; padding: 0.75em; background-color: #333; color: #fff; border: none; border-radius: 4px; cursor: pointer; }
+    button:hover { background-color: #555; }
+    .slideshow-container { width: 100%; max-height: 400px; overflow: hidden; position: relative; }
+    .slides { display: none; width: 100%; height: auto; object-fit: cover; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>TB Vending Services LLC</h1>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#services">Services</a>
+      <a href="#used-machines">Used Machines</a>
+      <a href="#micro-markets">Micro Markets</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <div class="slideshow-container">
+    <img class="slides" src="https://www.intelligentvending.co.uk/images/products/large/gsnack-design-line-sd8od.jpg" alt="G-Snack Vending Machine">
+    <img class="slides" src="https://www.intelligentvending.co.uk/images/products/large/rondo-6-40-snack-drink-combi-vending-machine.jpg" alt="Rondo Vending Machine">
+    <img class="slides" src="https://bottomsupvend.com/wp-content/uploads/2023/03/combo-vending-machine.jpg" alt="Combo Vending Machine">
+    <img class="slides" src="https://www.autovending.com.au/wp-content/uploads/2017/03/snack-combo-vending-machine.jpg" alt="Snack Vending Machine">
+  </div>
+
+  <section id="home" class="container">
+    <h2>Welcome to TB Vending Services LLC</h2>
+    <p>We provide high-quality vending machine services to businesses of all sizes—free of charge. From snacks and beverages to custom micro markets, we're here to keep your team refreshed and satisfied.</p>
+  </section>
+
+  <section id="services" class="container">
+    <h2>Our Services</h2>
+    <ul>
+      <li>Full-service snack and drink vending machines</li>
+      <li>Custom vending solutions for your business</li>
+      <li>Maintenance and restocking included</li>
+      <li>Micro market setup and management</li>
+    </ul>
+  </section>
+
+  <section id="used-machines" class="container">
+    <h2>Used Machines for Sale</h2>
+    <p>We sell a selection of used snack and drink machines. Contact us for current availability and pricing.</p>
+  </section>
+
+  <section id="micro-markets" class="container">
+    <h2>Micro Markets</h2>
+    <img src="https://vendbuffetinc.com/wp-content/uploads/2019/12/micro-market-1.jpg" alt="Micro Market Setup" style="width:100%; max-width:1000px; margin:1em 0;">
+    <img src="https://www.tcnvend.com/uploads/2020/10/TCN-CMX-13N(V22).jpg" alt="Intelligent Micro Market" style="width:100%; max-width:1000px; margin:1em 0;">
+    <p>Looking for a modern breakroom solution? Our micro markets offer fresh food, drinks, and snacks in a self-serve format tailored to your space.</p>
+  </section>
+
+  <section id="contact" class="container">
+    <h2>Contact Us</h2>
+    <p>Email: <a href="mailto:kirkhale60@yahoo.com">kirkhale60@yahoo.com</a></p>
+    <p>Phone: (715) 570-2152</p>
+    <p>Let us know how we can help serve your business!</p>
+    <form action="mailto:kirkhale60@yahoo.com" method="post" enctype="text/plain">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 TB Vending Services LLC. All rights reserved.</p>
+  </footer>
+
+  <script>
+    let slideIndex = 0;
+    const showSlides = () => {
+      const slides = document.getElementsByClassName("slides");
+      for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) { slideIndex = 1; }
+      slides[slideIndex - 1].style.display = "block";
+      setTimeout(showSlides, 3000);
+    };
+    showSlides();
+  </script>
+
+</body>
+</html>
